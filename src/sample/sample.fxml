@@ -1,8 +1,99 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab fx:id="volleyballTab" text="Volleyball">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="615.0" prefWidth="500.0">
+               <children>
+                  <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#addteamActionVoleyball" prefHeight="40.0" prefWidth="140.0" text="Add Team" />
+                  <Button layoutX="11.0" layoutY="66.0" mnemonicParsing="false" onAction="#deleteteamActionVolleyball" prefHeight="40.0" prefWidth="140.0" text="Delete Team" />
+                  <Button layoutX="253.0" layoutY="225.0" mnemonicParsing="false" onAction="#showTeamActionVolleyball" prefHeight="28.0" prefWidth="142.0" text="Show Teams" />
+                  <Button layoutX="11.0" layoutY="114.0" mnemonicParsing="false" onAction="#addMainJudgeActionVolleyball" prefHeight="40.0" prefWidth="140.0" text="Add Main Judge" />
+                  <Button layoutX="11.0" layoutY="161.0" mnemonicParsing="false" onAction="#deleteMainJudgeActionVolleyball" prefHeight="40.0" prefWidth="140.0" text="Delete Main Judge" />
+                  <Button layoutX="12.0" layoutY="210.0" mnemonicParsing="false" onAction="#addLinesmanActionVolleyball" prefHeight="40.0" prefWidth="140.0" text="Add Linesman" />
+                  <Button layoutX="253.0" layoutY="395.0" mnemonicParsing="false" onAction="#showMainJudgesActionVolleyball" prefHeight="28.0" prefWidth="142.0" text="Show Main Judges" />
+                  <Button layoutX="253.0" layoutY="562.0" mnemonicParsing="false" onAction="#showLinesmenActionVolleyball" prefHeight="28.0" prefWidth="142.0" text="Show Linesmen" />
+                  <Button layoutX="14.0" layoutY="576.0" mnemonicParsing="false" onAction="#startTournamentActionVolleyball" prefHeight="34.0" prefWidth="153.0" text="Start Tournament!" />
+                  <Button layoutX="12.0" layoutY="259.0" mnemonicParsing="false" onAction="#deleteLinesmanActionVolleyball" prefHeight="42.0" prefWidth="140.0" text="Delete Linesman" />
+                  <TextArea fx:id="textAreaVolleyball1" editable="false" layoutX="162.0" layoutY="14.0" prefHeight="200.0" prefWidth="324.0" />
+                  <TextArea fx:id="textAreaVolleyball2" editable="false" layoutX="163.0" layoutY="259.0" prefHeight="124.0" prefWidth="321.0" />
+                  <TextArea fx:id="textAreaVolleyball3" editable="false" layoutX="165.0" layoutY="435.0" prefHeight="116.0" prefWidth="315.0" />
+                  <Label fx:id="errorVolleyball1" layoutX="5.0" layoutY="554.0" prefHeight="17.0" prefWidth="143.0" text="The game require 4 teams" visible="false">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Label>
+                  <Label fx:id="errorVolleyball2" layoutX="5.0" layoutY="534.0" prefHeight="17.0" prefWidth="162.0" text="The game require 2 linesmen" visible="false">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorVolleyball3" layoutX="5.0" layoutY="517.0" prefHeight="17.0" prefWidth="172.0" text="The game require 1 main judge" visible="false">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="dodgeballTab" text="Dogdeball">
+      <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="615.0" prefWidth="500.0">
+              <children>
+                  <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#addteamActionDodgeball" prefHeight="40.0" prefWidth="140.0" text="Add Team" />
+                  <Button layoutX="11.0" layoutY="66.0" mnemonicParsing="false" onAction="#deleteteamActionDodgeball" prefHeight="40.0" prefWidth="140.0" text="Delete Team" />
+                  <Button layoutX="253.0" layoutY="225.0" mnemonicParsing="false" onAction="#showTeamActionDodgeball" prefHeight="28.0" prefWidth="142.0" text="Show Teams" />
+                  <Button layoutX="11.0" layoutY="114.0" mnemonicParsing="false" onAction="#addMainJudgeActionDodgeball" prefHeight="40.0" prefWidth="140.0" text="Add Judge" />
+                  <Button layoutX="11.0" layoutY="161.0" mnemonicParsing="false" onAction="#deleteMainJudgeActionDodgeball" prefHeight="40.0" prefWidth="140.0" text="Delete Judge" />
+                  <Button layoutX="253.0" layoutY="395.0" mnemonicParsing="false" onAction="#showMainJudgesActionDodgeball" prefHeight="28.0" prefWidth="142.0" text="Show Main Judges" />
+                  <Button layoutX="14.0" layoutY="576.0" mnemonicParsing="false" onAction="#startTournamentActionDodgeball" prefHeight="34.0" prefWidth="153.0" text="Start Tournament!" />
+                  <TextArea fx:id="textArea1" editable="false" layoutX="162.0" layoutY="14.0" prefHeight="200.0" prefWidth="324.0" />
+                  <TextArea fx:id="textArea2" editable="false" layoutX="163.0" layoutY="259.0" prefHeight="124.0" prefWidth="321.0" />
+                  <Label fx:id="error2" layoutX="19.0" layoutY="554.0" prefHeight="17.0" prefWidth="143.0" text="The game require 4 teams" visible="false" />
+              </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tugOfWarTab" text="Tugofwar">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#addTeamActionTugOfWar" prefHeight="40.0" prefWidth="140.0" text="Add Team" />
+                  <Button layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#deleteTeamActionTugOfWar" prefHeight="40.0" prefWidth="140.0" text="Delete Team" />
+                  <Button layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#addJudgeActionTugOfWar" prefHeight="40.0" prefWidth="140.0" text="Add Judge" />
+                  <Button layoutX="10.0" layoutY="163.0" mnemonicParsing="false" onAction="#deleteJudgeActionTugOfWar" prefHeight="40.0" prefWidth="140.0" text="Delete Judge" />
+                  <TextArea fx:id="textAreaTugOfWar1" editable="false" layoutX="162.0" layoutY="15.0" prefHeight="200.0" prefWidth="324.0" />
+                  <Button layoutX="253.0" layoutY="225.0" mnemonicParsing="false" onAction="#showTeamActionTugOfWar" prefHeight="28.0" prefWidth="142.0" text="Show Teams" />
+                  <Button layoutX="253.0" layoutY="397.0" mnemonicParsing="false" onAction="#showJudgesActionTugOfWar" prefHeight="28.0" prefWidth="142.0" text="Show Judges" />
+                  <TextArea fx:id="textAreaTugOfWar2" editable="false" layoutX="164.0" layoutY="263.0" prefHeight="124.0" prefWidth="321.0" />
+                  <Button layoutX="10.0" layoutY="573.0" mnemonicParsing="false" onAction="#startTournamentActionTugOfWar" prefHeight="34.0" prefWidth="153.0" text="Start Tournament!" />
+                  <Label fx:id="errorTugOfWar1" layoutX="15.0" layoutY="545.0" prefHeight="17.0" prefWidth="143.0" text="The game require 4 teams" visible="false" />
+                  <Label fx:id="errorTugOfWar2" layoutX="15.0" layoutY="528.0" prefHeight="17.0" prefWidth="143.0" text="The game require 1 judge" visible="false" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Reset">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#resetVolleyball" prefHeight="44.0" prefWidth="114.0" text="Reset Volleyball" />
+                  <Button layoutX="192.0" layoutY="75.0" mnemonicParsing="false" onAction="#resetDodgeball" prefHeight="44.0" prefWidth="114.0" text="Reset Dogdeball" />
+                  <Button layoutX="372.0" layoutY="75.0" mnemonicParsing="false" onAction="#resetTugofwar" prefHeight="44.0" prefWidth="114.0" text="Reset Tugofwar" />
+                  <Label alignment="CENTER" layoutX="-1.0" layoutY="22.0" prefHeight="53.0" prefWidth="500.0" text="If you reset any sport, all saved changes will be deleted">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

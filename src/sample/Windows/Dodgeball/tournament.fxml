@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Windows.Dodgeball.tournamentController">
+    <children>
+        <Label layoutX="48.0" layoutY="14.0" prefHeight="55.0" prefWidth="415.0" text="Dodgeball Tournament">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Button fx:id="generateButton1" layoutX="14.0" layoutY="397.0" mnemonicParsing="false" onAction="#generateSemiFinalsAction" prefHeight="34.0" prefWidth="142.0" text="Generate Semi-Finals" />
+        <Button fx:id="generateButton2" layoutX="14.0" layoutY="439.0" mnemonicParsing="false" onAction="#generateFinalAction" prefHeight="34.0" prefWidth="142.0" text="Generate Final" />
+        <Button layoutX="276.0" layoutY="210.0" mnemonicParsing="false" onAction="#showMatchesAction" prefHeight="25.0" prefWidth="158.0" text="Show Matches" />
+        <TextArea fx:id="textArea1" layoutX="232.0" layoutY="91.0" prefHeight="108.0" prefWidth="247.0" />
+        <Button fx:id="showScoreboardButton" layoutX="279.0" layoutY="372.0" mnemonicParsing="false" onAction="#showScoreboardAction" prefHeight="25.0" prefWidth="158.0" text="Show Scoreboard" />
+        <TextArea fx:id="textArea2" layoutX="234.0" layoutY="254.0" prefHeight="108.0" prefWidth="247.0" />
+        <Button fx:id="playTheMatchButton" layoutX="42.0" layoutY="111.0" mnemonicParsing="false" onAction="#playMatchAction" prefHeight="34.0" prefWidth="142.0" text="Play The Match!" />
+        <Label fx:id="label" layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="206.0" text="Next match:" />
+        <Button fx:id="startFinalsButton" disable="true" layoutX="42.0" layoutY="154.0" mnemonicParsing="false" onAction="#startFinalsAction" prefHeight="34.0" prefWidth="142.0" text="Start Finals!" visible="false" />
+    </children>
+</AnchorPane>
