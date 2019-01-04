@@ -1,6 +1,6 @@
 # JavaFX-Project
 
-Program obsługujący rozgrywki na plaży Kopakabana.
+Program obsługujący rozgrywki na plaży Copakabana.
 Umożliwia obsługę trzech turniejów: w siatkówce plażowej,
 gry w dwa ognie i zmagań w przeciąganiu liny. W programie jest możliwość dodawania,
 usuwania i przeglądania drużyn które składają się ze stałej liczby zawodników oraz sędziów.
