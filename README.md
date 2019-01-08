@@ -1,4 +1,4 @@
-# JavaFX-Project
+# Copacabana
 
 Program obsługujący rozgrywki na plaży Copakabana.
 Umożliwia obsługę trzech turniejów: w siatkówce plażowej,
